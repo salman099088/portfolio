@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available for Hire (Please)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+            color: #d1d5db; /* text-gray-300 */
+        }
+        .glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #3b82f6, 0 0 10px #3b82f6, 0 0 15px #3b82f6;
+            }
+            to {
+                text-shadow: 0 0 10px #60a5fa, 0 0 20px #60a5fa, 0 0 30px #60a5fa;
+            }
+        }
+        .card {
+            background-color: #1f2937; /* bg-gray-800 */
+            border: 1px solid #374151; /* border-gray-700 */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.2), 0 4px 6px -2px rgba(59, 130, 246, 0.1);
+        }
+        #close-modal-btn {
+            font-size: 2rem;
+            line-height: 1;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-10 bg-gray-900 bg-opacity-80 backdrop-blur-md border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-wider text-white">Salman Khan</h1>
+            <nav>
+                <a href="#skills" class="text-gray-400 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Alleged Skills</a>
+                <a href="#projects" class="text-gray-400 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Unfinished Masterpieces</a>
+                <a href="#contact" class="text-gray-400 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Send a Pity Email</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24">
+        <!-- Hero Section -->
+        <section class="text-center py-20">
+            <div class="mb-4">
+                <span class="inline-block bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Open to Work</span>
+            </div>
+            <h2 class="text-5xl md:text-7xl font-black text-white leading-tight">
+                An Over Educated <br class="hidden md:block" /> Unemployed <br>
+                 but <br>  <span class="text-blue-500 glow">Genius</span>
+            </h2>
+            <p class="mt-6 text-lg text-gray-400 max-w-2xl mx-auto">
+                Seeking a role where my expertise in refreshing job boards and contemplating the void can finally be monetized. My main qualification is that I am, in fact, available. Immediately.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+                 <a href="#contact" class="w-full sm:w-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105">
+                    Hire Me Before I Reconsider
+                </a>
+                <button id="view-tracker-btn" class="w-full sm:w-auto inline-block bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105">
+                    See Who Viewed This Profile
+                </button>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <h3 class="text-4xl font-bold text-center text-white mb-12">Skills I Definitely Have</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="card p-6 rounded-xl text-center">
+                    <h4 class="text-xl font-bold text-white">I Don't Sleep</h4>
+                    <p class="text-gray-400 mt-2"> I don't sleep till 6AM, only if i watch reels and play games .</p>
+                </div>
+                <div class="card p-6 rounded-xl text-center">
+                    <h4 class="text-xl font-bold text-white">HTML boss</h4>I
+                    <p class="text-gray-400 mt-2">Am a pro html developer, i don't even know how to center a div</p>
+                </div>
+                <div class="card p-6 rounded-xl text-center">
+                    <h4 class="text-xl font-bold text-white">Procrastination</h4>
+                    <p class="text-gray-400 mt-2">Why do today what can be put off until the anxiety is overwhelming? A true strategist.</p>
+                </div>
+                <div class="card p-6 rounded-xl text-center">
+                    <h4 class="text-xl font-bold text-white">Late-night Philosopher</h4>
+                    <p class="text-gray-400 mt-2">Deep thoughts between 2–4 AM.</p>
+                </div>
+                 <div class="card p-6 rounded-xl text-center">
+                    <h4 class="text-xl font-bold text-white">Doom Scrolling</h4>
+                    <p class="text-gray-400 mt-2">Averages 14+ hours of screen time. My commitment to staying anxious is unparalleled.</p>
+                </div>
+                <div class="card p-6 rounded-xl text-center">
+                    <h4 class="text-xl font-bold text-white">Expert Gamer</h4>
+                    <p class="text-gray-400 mt-2">I play games all day bcz i jus wanna help poor game companies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <h3 class="text-4xl font-bold text-center text-white mb-12">A Museum of Abandoned Dreams</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="card rounded-xl overflow-hidden">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold text-white">The Revolutionary To-Do App</h4>
+                        <p class="text-gray-400 mt-3">An ambitious project to organize my life. Got stuck on the UI, decided to take a nap instead. The list remains undone, proving the app's core concept.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-gray-700 text-gray-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full">JavaScript</span>
+                            <span class="inline-block bg-gray-700 text-gray-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full">Regret</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="card rounded-xl overflow-hidden">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold text-white">AI-Powered Recipe Generator</h4>
+                        <p class="text-gray-400 mt-3">It was supposed to create unique recipes. It only ever suggested "sad cereal" or "microwaved water." I considered this a success and retired the project.</p>
+                         <div class="mt-4">
+                            <span class="inline-block bg-gray-700 text-gray-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full">Python</span>
+                             <span class="inline-block bg-gray-700 text-gray-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full">Existential Dread</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="card rounded-xl overflow-hidden">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold text-white">Personal Blog</h4>
+                        <p class="text-gray-400 mt-3">Wrote one "Hello, World!" post in 2022. The profound silence that followed speaks volumes about my content strategy. The domain has since expired.</p>
+                         <div class="mt-4">
+                            <span class="inline-block bg-gray-700 text-gray-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full">WordPress</span>
+                             <span class="inline-block bg-gray-700 text-gray-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full">Apathy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 text-center">
+            <h3 class="text-4xl font-bold text-white">Send an Offer (or just a funny cat video)</h3>
+            <p class="mt-4 text-lg text-gray-400 max-w-xl mx-auto">My inbox is an empty wasteland. Your message could be the first sign of life it has seen in months.</p>
+
+            <form id="contact-form" class="mt-10 max-w-xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Your Name (or an Alias)" class="bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 w-full">
+                    <input type="email" placeholder="Your Email (I promise not to spam)" class="bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 w-full">
+                </div>
+                <textarea placeholder="Your message of condolence, job offer, or stock tips..." rows="5" class="bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 w-full mt-4"></textarea>
+                <button type="submit" class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105">
+                    Send into the Digital Void
+                </button>
+                <p id="form-message" class="mt-4 text-green-400 opacity-0 transition-opacity duration-500"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+             <div class="mb-6 flex justify-center">
+                <a href="https://www.instagram.com/beingsamn" target="_blank" rel="noopener noreferrer" class="inline-block text-gray-400 hover:text-white transition-colors duration-300">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.25-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.85s.012-3.584.07-4.85c.149-3.227 1.664-4.771 4.919-4.919C8.415 2.175 8.796 2.163 12 2.163m0-1.622c-3.264 0-3.66.014-4.944.072-4.358.2-6.78 2.618-6.98 6.98C.014 8.34 0 8.736 0 12s.014 3.66.072 4.944c.2 4.358 2.618 6.78 6.98 6.98 1.284.058 1.68.072 4.944.072s3.66-.014 4.944-.072c4.358-.2 6.78-2.618 6.98-6.98.058-1.284.072-1.68.072-4.944s-.014-3.66-.072-4.944c-.2-4.358-2.618-6.78-6.98-6.98C15.66.556 15.264.541 12 .541zM12 6.837a5.163 5.163 0 100 10.326 5.163 5.163 0 000-10.326zm0 8.427a3.264 3.264 0 110-6.528 3.264 3.264 0 010 6.528zm6.324-9.394a1.223 1.223 0 100 2.446 1.223 1.223 0 000-2.446z" />
+                    </svg>
+                </a>
+            </div>
+            <p>&copy; 2025. All rights reserved, mostly because nobody else wants them.</p>
+            <p class="mt-2 text-sm">This website was built with tears, caffeine, and the last remaining shreds of my optimism.</p>
+        </div>
+    </footer>
+
+    <!-- Viewer Tracker Modal -->
+    <div id="tracker-modal" class="fixed inset-0 bg-black bg-opacity-80 backdrop-blur-sm flex items-center justify-center p-4 z-50 hidden transition-opacity duration-300">
+        <div class="bg-gray-800 rounded-xl p-8 max-w-sm w-full text-center border border-gray-700 shadow-lg relative transform transition-all duration-300 scale-95">
+            <button id="close-modal-btn" class="absolute top-2 right-4 text-gray-500 hover:text-white">&times;</button>
+            <h3 class="text-2xl font-bold text-white">Viewer Analytics</h3>
+            <p class="text-gray-400 mt-4">Just kidding. I have no idea who you are, but thanks for stopping by. Your visit has been recorded in my heart (which is the only database I can afford).</p>
+            <p class="text-sm text-gray-500 mt-6">Now, about that job offer...</p>
+        </div>
+    </div>
+
+
+    <script>
+        // --- Sarcastic Contact Form ---
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Stop the form from actually submitting
+            
+            formMessage.textContent = 'Success! Your message has been launched into orbit. We will not be tracking its journey.';
+            formMessage.classList.remove('opacity-0');
+
+            contactForm.reset();
+
+            setTimeout(() => {
+                formMessage.classList.add('opacity-0');
+            }, 5000);
+        });
+
+        // --- Fake Viewer Tracker Modal ---
+        const viewTrackerBtn = document.getElementById('view-tracker-btn');
+        const trackerModal = document.getElementById('tracker-modal');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const modalContent = trackerModal.querySelector('div');
+
+        viewTrackerBtn.addEventListener('click', () => {
+            trackerModal.classList.remove('hidden');
+            setTimeout(() => { // Staggered animation effect
+                trackerModal.style.opacity = '1';
+                modalContent.style.transform = 'scale(1)';
+            }, 10);
+        });
+
+        function closeModal() {
+            modalContent.style.transform = 'scale(0.95)';
+            trackerModal.style.opacity = '0';
+            setTimeout(() => { // Wait for animation to finish
+                trackerModal.classList.add('hidden');
+            }, 300);
+        }
+
+        closeModalBtn.addEventListener('click', closeModal);
+
+        trackerModal.addEventListener('click', (event) => {
+            if (event.target === trackerModal) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
+
